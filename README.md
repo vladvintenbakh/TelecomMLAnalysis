@@ -1,42 +1,49 @@
-# Telecom_ML_Analysis
-<br>
+# Telecom Churn Prediction Analysis
 
-**The goal of the analysis:**
-&nbsp;&nbsp;&nbsp;&nbsp;
-<br><br>
-&nbsp;&nbsp;&nbsp;&nbsp; Every business is striving to maximize the number of clients. To achieve this goal, not only is it necessary to attract new clients, but it is also important to retain the existing ones. Retaining customers is cheaper for the company than attracting new ones. Apart from that, there is already data available about the interaction of existing customers with the business.<br>
+## Project Objective
+The purpose of this project is to analyze customer data from a telecom company to understand patterns of churn (customers leaving the service). By predicting the churn rate, the business can take proactive measures to retain clients who are likely to leave, which is generally more cost-effective than acquiring new customers. The analysis aims to develop models that can predict customer churn based on historical interaction data and demographic information.
 
-&nbsp;&nbsp;&nbsp;&nbsp; Therefore, by predicting churn rate we can try and retain customers that are about to leave in a timely manner. Relying on the collected data we can attempt to change the customer's decision to leave the carrier.<br>
+### Methods Used
+* Exploratory Data Analysis
+* Data Visualization
+* Descriptive Statistics
+* Predictive Modeling
+* Machine Learning (Classification)
 
-&nbsp;&nbsp;&nbsp;&nbsp; The analysis includes the following points:
-1. EDA *(with calculating basic statistics)*, 
-2. Exploring variable relationships and forming hypotheses
-3. Building models for predicting churn
-4. Comparing the model quality
+### Technologies
+* Python
+* Jupyter
+* Pandas
+* NumPy
+* Scikit-learn
+* Matplotlib
+* Seaborn
+* Plotly
 
-## Codebook
-<br>
+## Project Description
+This project performs an exploratory data analysis (EDA) and develops predictive models to understand and forecast telecom customer churn. The dataset contains various customer attributes such as demographics, service usage, billing information, and contract types, which are analyzed to uncover relationships and trends that contribute to customer churn.
 
-`telecom_users.csv` contains the following columns:<br><br>
+Key areas of focus include:
+1. Exploring demographic and service usage factors that contribute to churn.
+2. Building machine learning models to predict churn based on customer attributes.
+3. Comparing the accuracy and performance of different machine learning models (e.g., logistic regression, decision trees, random forests).
+4. Visualizing the significant factors influencing customer retention.
 
-&nbsp;&nbsp;&nbsp;&nbsp; `customerID` – client id<br>
-&nbsp;&nbsp;&nbsp;&nbsp; `gender` – client's gender (male/female)<br>
-&nbsp;&nbsp;&nbsp;&nbsp; `SeniorCitizen` – whether the customer is a senior citizen (1, 0)<br>
-&nbsp;&nbsp;&nbsp;&nbsp; `Partner` – whether the customer is married (Yes, No)<br>
-&nbsp;&nbsp;&nbsp;&nbsp; `Dependents` – whether the customer has dependents (Yes, No)<br>
-&nbsp;&nbsp;&nbsp;&nbsp; `tenure` – the time that the customer has been with the company (in months)<br>
-&nbsp;&nbsp;&nbsp;&nbsp; `PhoneService` – whether the phone service is connected (Yes, No)<br>
-&nbsp;&nbsp;&nbsp;&nbsp; `MultipleLines` – whether the customer is using multiple phone service lines (Yes, No, No phone service)<br>
-&nbsp;&nbsp;&nbsp;&nbsp; `InternetService` – client's internet provider (DSL, Fiber optic, No)<br>
-&nbsp;&nbsp;&nbsp;&nbsp; `OnlineSecurity` – whether the online security service is activated (Yes, No, No internet service)<br>
-&nbsp;&nbsp;&nbsp;&nbsp; `OnlineBackup` – whether the online backup service is activated (Yes, No, No internet service)<br>
-&nbsp;&nbsp;&nbsp;&nbsp; `DeviceProtection` – whether the customer has device protection insurance (Yes, No, No internet service)<br>
-&nbsp;&nbsp;&nbsp;&nbsp; `TechSupport` – whether the customer is using tech support (Yes, No, No internet service)<br>
-&nbsp;&nbsp;&nbsp;&nbsp; `StreamingTV` – whether the customer is using TV streaming (Yes, No, No internet service)<br>
-&nbsp;&nbsp;&nbsp;&nbsp; `StreamingMovies` – whether the customer is using movie streaming (Yes, No, No internet service)<br>
-&nbsp;&nbsp;&nbsp;&nbsp; `Contract` – the type of the contract (Month-to-month, One year, Two year)<br>
-&nbsp;&nbsp;&nbsp;&nbsp; `PaperlessBilling` – whether the customer is using cashless payment methods (Yes, No)<br>
-&nbsp;&nbsp;&nbsp;&nbsp; `PaymentMethod` – payment method (Electronic check, Mailed check, Bank transfer (automatic), Credit card (automatic))<br>
-&nbsp;&nbsp;&nbsp;&nbsp; `MonthlyCharges` – current monthly charges<br>
-&nbsp;&nbsp;&nbsp;&nbsp; `TotalCharges` – total charges over the client's tenure<br>
-&nbsp;&nbsp;&nbsp;&nbsp; `Churn` – whether the customer left (Yes or No)<br>
+## Project Needs
+- Data exploration and descriptive statistics
+- Data processing/cleaning
+- Feature engineering
+- Machine learning model development
+- Data visualization
+- Model evaluation and comparison
+- Writeup/reporting
+
+## Getting Started
+
+1. Clone this repo (for help see this [tutorial](https://help.github.com/articles/cloning-a-repository/)).
+2. The `telecom_users.csv` dataset used for this analysis is publicly available and can be downloaded [here](https://www.kaggle.com/blastchar/telco-customer-churn).
+3. The primary Jupyter notebook for the project is available [here](https://github.com/vladvintenbakh/TelecomMLAnalysis/blob/main/Telecom_ML_Analysis.ipynb).
+4. Install the dependencies listed in `requirements.txt` and run the notebook.
+
+## Featured Notebooks
+* [Telecom_Churn_Prediction.ipynb](https://github.com/vladvintenbakh/TelecomMLAnalysis/blob/main/Telecom_ML_Analysis.ipynb)
